@@ -16,11 +16,11 @@ class CardRow extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
-              margin: EdgeInsets.all(16.0),
-              padding: EdgeInsets.all(20.0),
+              margin: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(20.0),
               height: 250,
               decoration: BoxDecoration(
-                  color: Color(0xFF171B29),
+                  color: const Color(0xFF171B29),
                   borderRadius: BorderRadius.circular(10)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,16 +36,16 @@ class CardRow extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
-                              color: Color(0xFF22A75D).withOpacity(0.25),
+                              color: const Color(0xFF22A75D).withOpacity(0.25),
                               spreadRadius: 0,
                               blurRadius: 25,
-                              offset: Offset(0,15)
+                              offset: const Offset(0,15)
                           ),
                         ]
                     ),
                   ),
                   RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
@@ -61,7 +61,7 @@ class CardRow extends StatelessWidget {
                           )
                         ]),
                   ),
-                  Container(
+                  const Expanded(
                     child: Text(
                       'Creators can gain independence through a decentralised digital currency system that is dependent on growing and engaging with the community and also their star power. They own 10-15% of the total value of the tokens minted.',
                       style: TextStyle(color: Colors.white),
@@ -73,14 +73,14 @@ class CardRow extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text(
+                        const Text(
                           'Learn More ',
                           style: TextStyle(
                               decoration: TextDecoration.underline,
                               color: Color(0xFF22A75D),
                               fontWeight: FontWeight.bold),
                         ),
-                        Icon(
+                        const Icon(
                           Icons.arrow_forward,
                           color: Color(0xFF22A75D),
                           size: 14,
@@ -94,12 +94,12 @@ class CardRow extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              margin: EdgeInsets.only(top: 150.0),
-              padding: EdgeInsets.all(20.0),
+              margin: const EdgeInsets.only(top: 150.0),
+              padding: const EdgeInsets.all(20.0),
               height: 250,
               width: 500,
               decoration: BoxDecoration(
-                  color: Color(0xFF171B29),
+                  color: const Color(0xFF171B29),
                   borderRadius: BorderRadius.circular(10)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -113,16 +113,16 @@ class CardRow extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: [
                         BoxShadow(
-                          color: Color(0xFF2278D4).withOpacity(0.25),
+                          color: const Color(0xFF2278D4).withOpacity(0.25),
                           spreadRadius: 0,
                           blurRadius: 25,
-                          offset: Offset(0,15)
+                          offset: const Offset(0,15)
                         ),
                       ]
                     ),
                   ),
                   RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
@@ -138,10 +138,10 @@ class CardRow extends StatelessWidget {
                           )
                         ]),
                   ),
-                  Container(
+                  Expanded(
                     child: Text(
                       'Holding social tokens allows the individual to gain access to benefits including unreleased content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers.',
-                      style: TextStyle(color: Colors.white),
+                      softWrap: true,style: TextStyle(color: Colors.white,),
                     ),
                   ),
                   TextButton(
@@ -150,14 +150,14 @@ class CardRow extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text(
+                        const Text(
                           'Learn More ',
                           style: TextStyle(
                               decoration: TextDecoration.underline,
                               color: Color(0xFF2278D4),
                               fontWeight: FontWeight.bold),
                         ),
-                        Icon(
+                        const Icon(
                           Icons.arrow_forward,
                           color: Color(0xFF2278D4),
                           size: 14,
